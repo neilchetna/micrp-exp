@@ -109,3 +109,7 @@ button {
 .social i {
   margin-right: 4px;
 }
+.bottom-text {
+  text-align: center;
+  margin: 1rem;
+}
