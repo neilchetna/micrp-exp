@@ -23,3 +23,41 @@
   flex-direction: column;
   font-family: "Tag-line-light";
 }
+
+.btn {
+  position: absolute;
+  /* left: 50%;
+  top: 45%;
+  transform: translate(-50%,-50%); */
+  right: 50px;
+  top: 20px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  background: none;
+  z-index: 50;
+  border-bottom: 2px solid #009bdb;
+  /* border-TOP: 2px solid #009BDB; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 1000;
+}
+
+.btn-2::before {
+  background-color: #009bdb;
+  transition: 0.3s ease-out;
+}
+.btn-2 span {
+  color: white;
+}
+.btn.hover-slide-right::before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+}
+.btn.hover-slide-right:hover::before {
+  width: 100%;
+}

@@ -3,11 +3,11 @@ import "./Login.css";
 import ParticlaAni from "../ParticlaAni";
 import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function Signup() {
   return (
     <>
       <form>
-        <h3>Login Here</h3>
+        <h3>Signup Here</h3>
 
         <label for="username">Username</label>
         <input type="text" placeholder="Email or Phone" id="username" />
@@ -15,9 +15,9 @@ export default function Login() {
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password" />
 
-        <button>Log In</button>
+        <button>Signup</button>
         <p>
-          Create an Account? <Link to="/signup">Signup</Link>
+          Already have and Account? <Link to="/login">Login</Link>
         </p>
       </form>
     </>

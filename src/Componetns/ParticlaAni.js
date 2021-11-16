@@ -81,7 +81,7 @@ export default function ParticlaAni() {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.4,
           },
           shape: {
             type: "circle",
