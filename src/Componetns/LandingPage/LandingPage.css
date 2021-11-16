@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Tag-line";
+  src: url("../../assets/Gobold Hollow.ttf");
+}
+@font-face {
+  font-family: "Tag-line-light";
+  src: url("../../assets/Gobold Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/Roboto-Bold.ttf");
+}
+
+.bif-text-bottom {
+  color: white;
+  text-transform: uppercase;
+  font-size: 90px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Tag-line-light";
+}
