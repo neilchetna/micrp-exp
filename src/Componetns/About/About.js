@@ -1,11 +1,10 @@
 import React from "react";
 import AboutCard from "./AboutCard";
 
-import Varun from "../../assets/mun.jfif";
-import Mandy from "../../assets/mandy2.jfif";
-import Nol from "../../assets/nol.jpg";
+import Vinay from "../../assets/mun.jfif";
+import Mandaar from "../../assets/mandy2.jfif";
+import Abhishek from "../../assets/nol.jpg";
 import "./About.css";
-import about from "../../assets/jsondata/about.json";
 
 export default function About() {
   return (
@@ -17,7 +16,7 @@ export default function About() {
           github="https://github.com/abhisheknawal87"
           linkedin="https://www.linkedin.com/in/abhsiheknawal/"
           email="mailto:abhisheknawal87@gmail.com"
-          photo={Nol}
+          photo={Abhishek}
         />
         <AboutCard
           name="Vinay Pursnani"
@@ -25,7 +24,7 @@ export default function About() {
           github="https://github.com/vinaypursnani"
           linkedin="https://www.linkedin.com/in/vinay-pursnani"
           email="mailto:vinaypursnani@icloud.com"
-          photo={Varun}
+          photo={Vinay}
         />
         <AboutCard
           name="Mandaar Sangisapu"
@@ -33,7 +32,7 @@ export default function About() {
           github="https://github.com/mandy0069"
           linkedin="https://www.linkedin.com/in/mandy0609/"
           email="msangisapu00@gmail.com"
-          photo={Mandy}
+          photo={Mandaar}
         />
       </div>
     </>
