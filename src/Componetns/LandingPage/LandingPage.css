@@ -63,6 +63,7 @@
   width: 100%;
   padding: 15px 20px;
   transition: 0.3s;
+  text-align: left;
 }
 
 .btn-2::before {
@@ -71,6 +72,7 @@
 }
 .btn-2 span {
   color: white;
+  text-align: left;
 }
 .btn.hover-slide-right::before {
   top: 0;
