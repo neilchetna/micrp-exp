@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import { signOut } from "@firebase/auth";
+import { signOut, onAuthStateChanged } from "@firebase/auth";
 import { auth } from "../Firebase/Firebase";
+import Webcam from "react-webcam";
 
 import "./Dashboard.css";
 
 export default function Dashboard() {
   const history = useNavigate();
   const [error, setError] = useState("");
+  const [user, setUser] = useState({});
+
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
 
   async function handleEvent(e) {
     e.preventDefault();
@@ -19,11 +25,15 @@ export default function Dashboard() {
       setError("Logout Failed");
     }
   }
+  console.log(user);
 
   console.log(error);
   return (
     <>
-      <div className="dashboard_card"></div>
+      <div className="dashboard_card">
+        Welcome {user.email}!
+        <Webcam />
+      </div>
       <button
         onClick={handleEvent}
         className="btn btn-2 hover-slide-right"
