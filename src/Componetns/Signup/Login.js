@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { signInWithEmailAndPassword, onAuthStateChanged } from "@firebase/auth";
+import { signInWithEmailAndPassword } from "@firebase/auth";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../Firebase/Firebase";
@@ -7,7 +7,6 @@ import { auth } from "../Firebase/Firebase";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [user, setUser] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const history = useNavigate();

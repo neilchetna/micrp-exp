@@ -25,13 +25,12 @@ export default function Dashboard() {
       setError("Logout Failed");
     }
   }
-  console.log(user);
 
   console.log(error);
   return (
     <>
       <div className="dashboard_card">
-        Welcome {user.email}!
+        Welcome {user === null ? null : user.email}!
         <Webcam />
       </div>
       <button
